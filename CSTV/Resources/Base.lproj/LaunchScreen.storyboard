@@ -21,7 +21,7 @@
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" name="backgroundColor"/>
+                        <color key="backgroundColor" name="background-color"/>
                         <constraints>
                             <constraint firstItem="qdc-rC-0M7" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="9wS-5n-chd"/>
                             <constraint firstItem="qdc-rC-0M7" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="xL5-49-f5i"/>
@@ -35,7 +35,7 @@
     </scenes>
     <resources>
         <image name="ic-fuze" width="113" height="113"/>
-        <namedColor name="backgroundColor">
+        <namedColor name="background-color">
             <color red="0.086274509803921567" green="0.086274509803921567" blue="0.12941176470588237" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
