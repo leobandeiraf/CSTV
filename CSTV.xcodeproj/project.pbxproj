@@ -31,6 +31,7 @@
 		A0666FBE2C74E94F00F836FD /* UITableView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0666FB62C74E94F00F836FD /* UITableView+Extensions.swift */; };
 		A0666FBF2C74E94F00F836FD /* UITableViewCell+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0666FB72C74E94F00F836FD /* UITableViewCell+Extensions.swift */; };
 		A0666FC02C74E94F00F836FD /* UITableViewHeaderFooterView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0666FB82C74E94F00F836FD /* UITableViewHeaderFooterView+Extensions.swift */; };
+		A0666FC32C7505E900F836FD /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0666FC22C7505E900F836FD /* UIColor+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +78,7 @@
 		A0666FB62C74E94F00F836FD /* UITableView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+Extensions.swift"; sourceTree = "<group>"; };
 		A0666FB72C74E94F00F836FD /* UITableViewCell+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+Extensions.swift"; sourceTree = "<group>"; };
 		A0666FB82C74E94F00F836FD /* UITableViewHeaderFooterView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableViewHeaderFooterView+Extensions.swift"; sourceTree = "<group>"; };
+		A0666FC22C7505E900F836FD /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -254,6 +256,7 @@
 				A0666FB62C74E94F00F836FD /* UITableView+Extensions.swift */,
 				A0666FB72C74E94F00F836FD /* UITableViewCell+Extensions.swift */,
 				A0666FB82C74E94F00F836FD /* UITableViewHeaderFooterView+Extensions.swift */,
+				A0666FC22C7505E900F836FD /* UIColor+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -403,6 +406,7 @@
 				A0666F972C74E5D000F836FD /* AppCoordinator.swift in Sources */,
 				A0666FA32C74E8A800F836FD /* TableViewSection.swift in Sources */,
 				A0666FA22C74E8A800F836FD /* TableViewRow.swift in Sources */,
+				A0666FC32C7505E900F836FD /* UIColor+Extensions.swift in Sources */,
 				A0666FBA2C74E94F00F836FD /* UIView+Extensions.swift in Sources */,
 				A0666FBF2C74E94F00F836FD /* UITableViewCell+Extensions.swift in Sources */,
 				A0666FBE2C74E94F00F836FD /* UITableView+Extensions.swift in Sources */,
