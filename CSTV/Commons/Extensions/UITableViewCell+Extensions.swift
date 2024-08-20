@@ -1,9 +1,9 @@
 import UIKit
 
-public typealias TableViewCell = UITableViewCell & Configurable
+typealias TableViewCell = UITableViewCell & Configurable
 extension UITableViewCell: Reusable {}
 
-public extension UITableViewCell {
+extension UITableViewCell {
     static func errorValue(with message: String) -> Self {
         assert(false, message)
         let cell = Self()

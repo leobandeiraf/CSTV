@@ -1,24 +1,24 @@
 import UIKit
 
-public struct TableViewSection<Section: Hashable> {
+struct TableViewSection<Section: Hashable> {
     // MARK: - Property(ies).
-    public typealias Row = CellProvider & Tappable
+    typealias Row = CellProvider & Tappable
     
-    public var numberOfRows: Int { rows.count }
-    public private(set) var id: Section
-    public private(set) var header: UITableViewHeaderFooterView?
-    public private(set) var rows: [Row]
-    public private(set) var footer: UITableViewHeaderFooterView?
+    var numberOfRows: Int { rows.count }
+    private(set) var id: Section
+    private(set) var header: UITableViewHeaderFooterView?
+    private(set) var rows: [Row]
+    private(set) var footer: UITableViewHeaderFooterView?
     
     
     // MARK: - Initialization.
-    public init(id: Section, rows: [Row] = []) {
+    init(id: Section, rows: [Row] = []) {
         self.id = id
         self.rows = rows
     }
 }
 
-public extension TableViewSection {
+extension TableViewSection {
     mutating func addHeader(_ header: UITableViewHeaderFooterView) {
         self.header = header
     }
@@ -44,7 +44,7 @@ public extension TableViewSection {
     }
 }
 
-public extension TableViewSection {
+extension TableViewSection {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         rows[indexPath.row].tableView(tableView, cellForRowAt: indexPath)
     }
