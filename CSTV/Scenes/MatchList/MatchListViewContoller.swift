@@ -2,10 +2,12 @@ import UIKit
 
 final class MatchListViewContoller: UIViewController {
     // MARK: - Property(ies).
+    private let coordinator: MatchListCoordinating
     private let viewModel: MatchListViewModeling
     
     // MARK: - Initialization.
-    init(viewModel: MatchListViewModeling) {
+    init(coordinator: MatchListCoordinating, viewModel: MatchListViewModeling) {
+        self.coordinator = coordinator
         self.viewModel = viewModel
         super.init(nibName: nil, bundle: nil)
     }
