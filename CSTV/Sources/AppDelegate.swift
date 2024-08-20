@@ -6,10 +6,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         window = UIWindow(frame: UIScreen.main.bounds)
-        let navigationController = UINavigationController()
-        let coordinator = AppCoordinator(navigationController: navigationController)
+        let coordinator = AppCoordinator()
         coordinator.start()
-        window?.rootViewController = navigationController
+        window?.rootViewController = coordinator.navigationController
         window?.makeKeyAndVisible()
         return true
     }
