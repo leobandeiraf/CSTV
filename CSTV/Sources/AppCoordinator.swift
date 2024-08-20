@@ -13,7 +13,7 @@ final class AppCoordinator: Coordinating {
     var rootViewController: UIViewController?
     
     // MARK: - Initialization.
-    init(navigationController: UINavigationController) {
+    init(navigationController: UINavigationController = UINavigationController()) {
         self.navigationController = navigationController
     }
     
