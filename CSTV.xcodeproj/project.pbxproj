@@ -17,6 +17,8 @@
 		A0666F902C74D62900F836FD /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = A0666F8F2C74D62900F836FD /* Kingfisher */; };
 		A0666F932C74E3F100F836FD /* MatchListViewContoller.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0666F922C74E3F100F836FD /* MatchListViewContoller.swift */; };
 		A0666F952C74E41100F836FD /* MatchListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0666F942C74E41100F836FD /* MatchListViewModel.swift */; };
+		A0666F972C74E5D000F836FD /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0666F962C74E5D000F836FD /* AppCoordinator.swift */; };
+		A0666F992C74E70800F836FD /* MatchListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0666F982C74E70800F836FD /* MatchListCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		A0666F892C74D3B200F836FD /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A0666F922C74E3F100F836FD /* MatchListViewContoller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchListViewContoller.swift; sourceTree = "<group>"; };
 		A0666F942C74E41100F836FD /* MatchListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchListViewModel.swift; sourceTree = "<group>"; };
+		A0666F962C74E5D000F836FD /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		A0666F982C74E70800F836FD /* MatchListCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchListCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +144,7 @@
 			isa = PBXGroup;
 			children = (
 				A0666F892C74D3B200F836FD /* AppDelegate.swift */,
+				A0666F962C74E5D000F836FD /* AppCoordinator.swift */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -155,6 +160,7 @@
 		A0666F882C74D38F00F836FD /* Commons */ = {
 			isa = PBXGroup;
 			children = (
+				A0666F9A2C74E85D00F836FD /* Components */,
 			);
 			path = Commons;
 			sourceTree = "<group>";
@@ -162,10 +168,18 @@
 		A0666F912C74E28700F836FD /* MatchList */ = {
 			isa = PBXGroup;
 			children = (
+				A0666F982C74E70800F836FD /* MatchListCoordinator.swift */,
 				A0666F922C74E3F100F836FD /* MatchListViewContoller.swift */,
 				A0666F942C74E41100F836FD /* MatchListViewModel.swift */,
 			);
 			path = MatchList;
+			sourceTree = "<group>";
+		};
+		A0666F9A2C74E85D00F836FD /* Components */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -306,8 +320,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A0666F972C74E5D000F836FD /* AppCoordinator.swift in Sources */,
 				A0666F952C74E41100F836FD /* MatchListViewModel.swift in Sources */,
 				A0666F8A2C74D3B200F836FD /* AppDelegate.swift in Sources */,
+				A0666F992C74E70800F836FD /* MatchListCoordinator.swift in Sources */,
 				A0666F932C74E3F100F836FD /* MatchListViewContoller.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
