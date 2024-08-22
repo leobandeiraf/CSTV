@@ -9,7 +9,8 @@ final class MatchListViewContoller: UIViewController {
     
     // MARK: - Component(s).
     private lazy var tableView = TableView<Section>()
-        .backgroundColor(.backgroundColor ?? .black)
+        .backgroundColor(.background)
+        .register(cells: MatchCell.self)
     
     // MARK: - Initialization.
     init(coordinator: MatchListCoordinating, viewModel: MatchListViewModeling) {
@@ -47,12 +48,18 @@ final class MatchListViewContoller: UIViewController {
     private func configureViews() {
         title = "Partidas"
         configureNavigationBar()
+        
+        let model = ["Teste", "Teste", "Teste"]
+        tableView.add(
+            rows: model.map { TableViewRow<MatchCell>(model: $0) },
+            in: .matches
+        )
     }
     
     private func configureNavigationBar() {
         navigationController?.navigationBar.prefersLargeTitles = true
         navigationController?.navigationBar.largeTitleTextAttributes = [.foregroundColor: UIColor.white]
-        navigationController?.navigationBar.barTintColor = UIColor.backgroundColor
+        navigationController?.navigationBar.barTintColor = UIColor.background
         navigationController?.navigationBar.titleTextAttributes = [.foregroundColor: UIColor.white]
         let backImage = UIImage(named: "ic-arrow-left")
         navigationController?.navigationBar.backIndicatorImage = backImage
