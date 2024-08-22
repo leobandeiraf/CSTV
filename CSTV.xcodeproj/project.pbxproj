@@ -31,7 +31,7 @@
 		A0666FBE2C74E94F00F836FD /* UITableView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0666FB62C74E94F00F836FD /* UITableView+Extensions.swift */; };
 		A0666FBF2C74E94F00F836FD /* UITableViewCell+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0666FB72C74E94F00F836FD /* UITableViewCell+Extensions.swift */; };
 		A0666FC02C74E94F00F836FD /* UITableViewHeaderFooterView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0666FB82C74E94F00F836FD /* UITableViewHeaderFooterView+Extensions.swift */; };
-		A0666FC32C7505E900F836FD /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0666FC22C7505E900F836FD /* UIColor+Extensions.swift */; };
+		A0666FC62C75104800F836FD /* MatchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0666FC52C75104800F836FD /* MatchCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,7 +78,7 @@
 		A0666FB62C74E94F00F836FD /* UITableView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+Extensions.swift"; sourceTree = "<group>"; };
 		A0666FB72C74E94F00F836FD /* UITableViewCell+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+Extensions.swift"; sourceTree = "<group>"; };
 		A0666FB82C74E94F00F836FD /* UITableViewHeaderFooterView+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableViewHeaderFooterView+Extensions.swift"; sourceTree = "<group>"; };
-		A0666FC22C7505E900F836FD /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
+		A0666FC52C75104800F836FD /* MatchCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -196,6 +196,7 @@
 		A0666F912C74E28700F836FD /* MatchList */ = {
 			isa = PBXGroup;
 			children = (
+				A0666FC42C75103B00F836FD /* Cell */,
 				A0666F982C74E70800F836FD /* MatchListCoordinator.swift */,
 				A0666F922C74E3F100F836FD /* MatchListViewContoller.swift */,
 				A0666F942C74E41100F836FD /* MatchListViewModel.swift */,
@@ -256,9 +257,16 @@
 				A0666FB62C74E94F00F836FD /* UITableView+Extensions.swift */,
 				A0666FB72C74E94F00F836FD /* UITableViewCell+Extensions.swift */,
 				A0666FB82C74E94F00F836FD /* UITableViewHeaderFooterView+Extensions.swift */,
-				A0666FC22C7505E900F836FD /* UIColor+Extensions.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		A0666FC42C75103B00F836FD /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				A0666FC52C75104800F836FD /* MatchCell.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -399,6 +407,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A0666FC62C75104800F836FD /* MatchCell.swift in Sources */,
 				A0666FAC2C74E90C00F836FD /* Configurable.swift in Sources */,
 				A0666FBD2C74E94F00F836FD /* UIStackView+Extensions.swift in Sources */,
 				A0666FC02C74E94F00F836FD /* UITableViewHeaderFooterView+Extensions.swift in Sources */,
@@ -406,7 +415,6 @@
 				A0666F972C74E5D000F836FD /* AppCoordinator.swift in Sources */,
 				A0666FA32C74E8A800F836FD /* TableViewSection.swift in Sources */,
 				A0666FA22C74E8A800F836FD /* TableViewRow.swift in Sources */,
-				A0666FC32C7505E900F836FD /* UIColor+Extensions.swift in Sources */,
 				A0666FBA2C74E94F00F836FD /* UIView+Extensions.swift in Sources */,
 				A0666FBF2C74E94F00F836FD /* UITableViewCell+Extensions.swift in Sources */,
 				A0666FBE2C74E94F00F836FD /* UITableView+Extensions.swift in Sources */,
